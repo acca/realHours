@@ -87,5 +87,6 @@ function msToStr (msTime) {
     minutes = ~~(seconds / 60);
     hours = ~~(minutes / 60);
     minutes = minutes - (hours*60);
+    if (minutes<10) minutes ="0"+minutes;
     return hours+":"+minutes;
 }
